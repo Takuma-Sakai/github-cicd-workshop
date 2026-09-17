@@ -19,7 +19,7 @@ describe('formatAvailability', () => {
   })
 
   it('残席が3席の場合は残席わずかと表示する', () => {
-  expect(formatAvailability(10, 7)).toBe('残席わずか 3 席）')
+  expect(formatAvailability(10, 7)).toBe('残席わずか 3 席')
   })
 
   it('残席が4席の場合は通常表示にする', () => {
