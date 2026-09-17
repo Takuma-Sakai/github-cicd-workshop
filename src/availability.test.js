@@ -7,7 +7,7 @@ describe('formatAvailability', () => {
   })
 
   it('残席が3席以下のときはわかりやすく表示する', () => {
-    expect(formatAvailability(10, 8)).toBe('残りわずか 2 席')
+    expect(formatAvailability(10, 8)).toBe('残席わずか（残り 2 席）')
   })
 
   it('定員に達している場合は満席と表示する', () => {
@@ -19,7 +19,7 @@ describe('formatAvailability', () => {
   })
 
   it('残席が3席の場合は残席わずかと表示する', () => {
-  expect(formatAvailability(10, 7)).toBe('残席わずか 3 席')
+  expect(formatAvailability(10, 7)).toBe('残席わずか（残り 3 席）')
   })
 
   it('残席が4席の場合は通常表示にする', () => {
